@@ -1,0 +1,133 @@
+/* テーマオプションページは inc ディレクトリ参照 */
+
+/* メディアアップローダーで「添付ファイル投稿 URL」を非表示に */
+.button.urlpost { display:none !important; }
+
+/*-------------------------------------------*/
+/* 記事タイトル欄
+/*-------------------------------------------*/
+/* 非公開 */
+body.private #wpwrap #titlewrap input,
+/* レビュー待ち */
+body.pending #wpwrap #titlewrap input,
+/* 新規追加？ */
+body.auto-draft #wpwrap #titlewrap input,
+/* 下書き */
+body.draft #wpwrap #titlewrap input { border:2px solid #F66; }
+/* 公開済み */
+body.publish #wpwrap #titlewrap input { border:2px solid #39C; }
+
+/*-------------------------------------------*/
+/* 記事編集画面_公開ボックス
+/*-------------------------------------------*/
+body.private #submitdiv,
+body.pending #submitdiv,
+body.auto-draft #submitdiv,
+body.draft #submitdiv { border:2px solid #f66; }
+body.publish #submitdiv { border:2px solid #39C; }
+
+/*-------------------------------------------*/
+/* テーマオプション
+/*-------------------------------------------*/
+#iosys_options #sub-content { display:block; overflow:hidden;width:23%;float:right;height:100%;border:1px solid #ccc;}
+#iosys_options #sub-content iframe { width: 100%; margin:0; height:1600px; }
+#iosys_options #main-content { display:block; overflow:hidden;width:75%;float:left;}
+
+#iosys_options .sectionBox { padding-top:6em; position: relative; }
+#iosys_options #design.sectionBox { padding-top:6em; }
+
+/*.message_intro { position: padding: 1em; line-height: 170%; }*/
+
+.optionNav { display:block !important; overflow:hidden; }
+.optionNav ul { display:block; overflow:hidden;margin:0;padding:0 5px; }
+.optionNav ul li { display: block; float:left;border-radius: 3px 3px 0 0;border:1px solid #ccc; border-bottom:none;margin-right:3px; margin-bottom:0;}
+.optionNav ul li:hover { background-color: #666; }
+.optionNav ul li a { display:block; overflow:hidden;padding:1em; text-decoration: none;color:#666; }
+.optionNav ul li:hover a { color: #fff;border:none; }
+
+.optionNav.bottomNav  { margin:2em 0; }
+.optionNav.bottomNav ul li { border-radius: 3px;border:1px solid #ccc;float:right; }
+
+#logo .optionNav ul li#btn_logo,
+#about .optionNav ul li#btn_about,
+#service .optionNav ul li#btn_service,
+#recruit .optionNav ul li#btn_recruit,
+#company .optionNav ul li#btn_company,
+#seoSetting .optionNav ul li#btn_seoSetting,
+#topPage .optionNav ul li#btn_topPage,
+#slideSetting .optionNav ul li#btn_slideSetting {background-color: #333;}
+
+#logo .optionNav ul li#btn_logo a,
+#about .optionNav ul li#btn_about a,
+#service .optionNav ul li#btn_service a,
+#recruit .optionNav ul li#btn_recruit a,
+#company .optionNav ul li#btn_company a,
+#seoSetting .optionNav ul li#btn_seoSetting a,
+#topPage .optionNav ul li#btn_topPage a,
+#slideSetting .optionNav ul li#btn_slideSetting a { color:#fff;}
+
+#iosys_options h3 .message_box { font-size:12px; font-weight: lighter;padding-left:20px; }
+#iosys_options h3 .message_box a { color:#fff; }
+
+button.media_btn { padding:4px 5px; border:1px solid #ccc; border-radius: 2px; cursor: pointer; }
+
+#iosys_options h3 { background-color:#333; color:#fff; padding:10px 15px;font-size:150%;margin-top:0;border-left:5px solid #e50000;}
+#iosys_options h4 { border-bottom:1px dotted #000; font-size:150%; padding:0px 0px 4px; margin-bottom:10px;margin-top:0px; }
+
+#iosys_options textarea    { width:200px; }
+
+#iosys_options table {
+    margin-bottom:1em;
+    border-top:1px solid #ccc;
+    border-collapse: collapse;
+    margin-top: .5em;
+    width: 100%;
+    clear: both;
+}
+#iosys_options table th {
+    border-bottom:1px solid #ccc;
+    vertical-align: top;
+    text-align: left;
+    padding: 10px;
+    width: 200px;
+}
+#iosys_options table td {
+    border-bottom:1px solid #ccc;
+    margin-bottom: 9px;
+    padding: 8px 10px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+input[type=checkbox], input[type=radio] {
+    vertical-align: text-top;
+    padding: 0;
+    margin: 1px 0 0;
+}
+/*
+#iosys_options .sectionBox    { padding-top:50px; }
+#iosys_options #design.sectionBox    { padding-top:10px; }
+*/
+#iosys_options #company { display:block; overflow:hidden; }
+#iosys_options #company h5 {background-color:#e5e5e5;padding:5px 10px;}
+#iosys_options #company .prItem { width:30%;padding:0 3% 20px 0; float:left; }
+#iosys_options #company .prItem dl { margin:0px; padding:0px; }
+#iosys_options #company .prItem dl dt { font-weight:bold; }
+#iosys_options #company .prItem dl dd { margin:0 0 10px; }
+#iosys_options #company .prItem input[type="text"],
+#iosys_options #company .prItem textarea { width:95%; }
+
+.mediaSet { display:block; overflow:hidden; }
+#iosys_options #company .prItem input.media_text { width:60%;float:left; }
+
+.alert{ color:#f00; }
+
+#iosys_options #wpcontent select option { padding-right: 5px; }
+#iosys_options .image-radio-option td { padding-top: 15px; }
+#iosys_options .image-radio-option label { display: block; float: left; margin: 0 15px 20px 2px; position: relative; }
+#iosys_options .image-radio-option input { margin: 0 0 10px; }
+#iosys_options .image-radio-option span { display: block; }
+#iosys_options .image-radio-option img { margin: 0 0 0 -2px; }
+#link-color-example { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #dfdfdf; margin: 0 7px 0 3px; padding: 4px 14px; }
+
+body.rtl .image-radio-option label { float: right; margin: 0 2px 20px 30px; }
