@@ -12,7 +12,7 @@
   </div>
   <!--/wrap-->
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/stellar.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
@@ -44,7 +44,6 @@
           $(this).parent().toggle('fast');
       });
   });
-  </script>
 
 <?php wp_footer(); ?>
 </body>

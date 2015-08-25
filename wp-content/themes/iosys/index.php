@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+  
   <?php apply_filters('get_about', null); // ご挨拶 ?>
 
   <?php apply_filters('get_service', null); // イオシスでやっていること ?>
@@ -84,7 +84,7 @@
               <i class="fa fa-pencil-square-o form-control-feedback"></i>
             </div>
               
-            <button class="btn btn-primary btn-lg pull-right" type="submit">SUBMIT</button>
+            <button class="btn btn-primary btn-lg pull-right" type="submit">送信</button>
             
           </form>
         </div>

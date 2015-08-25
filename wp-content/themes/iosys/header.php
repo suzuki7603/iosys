@@ -102,14 +102,14 @@
   </div>
   
   <!-- page down -->
-  <div class="go-down">
+<!--  <div class="go-down">
     <a href="#about">
       <i class="fa fa-angle-down fa-3x"></i>
     </a>
-  </div>
+  </div>-->
     
   <!-- Wrap all page content here -->
-  <div id="wrap" class="home">
+  <div id="wrap" class="home" data-spy="scroll" data-target="#navbar-example">
     <header class="masthead">
       <div class="slider-container" id="slider">
         <div class="tp-banner-container">
@@ -186,7 +186,7 @@
       </div>
 
       <!-- Fixed navbar -->
-      <div class="navbar navbar-static-top" id="nav" role="navigation">
+      <div class="navbar navbar-fixed-top" id="nav" role="navigation">
         <div class="container">
           <!-- logo -->
           <div class="navbar-header">
@@ -204,7 +204,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="#slider">Home</a></li>
               <li><a href="#about">ご挨拶</a></li>
-              <li><a href="#services">イオシスでやってること</a></li>
+              <li><a href="#services">イオシスでやっていること</a></li>
               <li><a href="#recruit">一緒に働きませんか</a></li>
               <li><a href="#company">会社概要</a></li>
               <li><a href="#get-in-touch">お問い合わせ</a></li>

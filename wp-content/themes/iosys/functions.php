@@ -301,38 +301,34 @@ class setOption {
           <h1>一緒に働きませんか<!--span>y</span--></h1>
           <p><?php echo $recruitBody; ?></p>
           <table id="tablepress">
-            <thead>
               <tr class="row-1 odd">
                 <th class="column-1"><div>応募書類</div></th>
-                <th class="column-2"><div>履歴書（写真貼付）／経歴書／その他弊社指定の書類</div></th>
+                <td class="column-2"><div>履歴書（写真貼付）／経歴書／その他弊社指定の書類</div></td>
               </tr>
-            </thead>
-            <tbody class="row-hover">
               <tr class="row-2 even">
-                <td class="column-1">給与</td>
+                <th class="column-1">給与</th>
                 <td class="column-2"><?php echo $recruitSalary; ?></td>
               </tr>
               <tr class="row-3 odd">
-                <td class="column-1">賞与</td>
+                <th class="column-1">賞与</th>
                 <td class="column-2"><?php echo $recruitBonus; ?></td>
               </tr>
               <tr class="row-4 even">
-                <td class="column-1">手当</td>
+                <th class="column-1">手当</th>
                 <td class="column-2"><?php echo $recruitAllowance; ?></td>
               </tr>
               <tr class="row-5 odd">
-                <td class="column-1">勤務時間</td>
+                <th class="column-1">勤務時間</th>
                 <td class="column-2"><?php echo $recruitWorkingHours; ?></td>
               </tr>
               <tr class="row-6 even">
-                <td class="column-1">休日・休暇</td>
+                <th class="column-1">休日・休暇</th>
                 <td class="column-2"><?php echo $recruitVacation; ?></td>
               </tr>
               <tr class="row-7 odd">
-                <td class="column-1">福利厚生</td>
+                <th class="column-1">福利厚生</th>
                 <td class="column-2"><?php echo $recruitWelfare; ?></td>
               </tr>
-            </tbody>
           </table>
           <a href="#" class="btn btn-primary btn-lg">お問い合わせ</a>
         </div>
@@ -379,36 +375,36 @@ class setOption {
                 <thead>
                   <tr class="row-1 odd">
                     <th class="column-1"><div>商号</div></th>
-                    <th class="column-2"><div><?php echo bloginfo('name'); ?></div></th>
+                    <td class="column-2"><div><?php echo bloginfo('name'); ?></div></td>
                   </tr>
                 </thead>
                 <tbody class="row-hover">
                   <tr class="row-2 even">
-                    <td class="column-1">本社</td>
+                    <th class="column-1">本社</th>
                     <td class="column-2"><?php echo $companyInfo; ?></td>
                   </tr>
                   <tr class="row-3 odd">
-                    <td class="column-1">設立</td>
+                    <th class="column-1">設立</th>
                     <td class="column-2"><?php echo $companyEstablish; ?></td>
                   </tr>
                   <tr class="row-4 even">
-                    <td class="column-1">資本金</td>
+                    <th class="column-1">資本金</th>
                     <td class="column-2"><?php echo $companyCapital; ?>円</td>
                   </tr>
                   <tr class="row-5 odd">
-                    <td class="column-1">従業員数</td>
+                    <th class="column-1">従業員数</th>
                     <td class="column-2"><?php echo $companyStaff; ?></td>
                   </tr>
                   <tr class="row-6 even">
-                    <td class="column-1">事業内容</td>
+                    <th class="column-1">事業内容</th>
                     <td class="column-2"><?php echo $companyBusiness; ?></td>
                   </tr>
                   <tr class="row-7 odd">
-                    <td class="column-1">主要取引先<br />（敬称略、順不同）</td>
+                    <th class="column-1">主要取引先<br />（敬称略、順不同）</th>
                     <td class="column-2"><?php echo $companyClient; ?></td>
                   </tr>
                   <tr class="row-8 even">
-                    <td class="column-1">認可</td>
+                    <th class="column-1">認可</th>
                     <td class="column-2"><?php echo $companyApproval; ?></td>
                   </tr>
                 </tbody>
@@ -761,7 +757,7 @@ wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.4/jque
 wp_enqueue_script( 'jquery-mig', '//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js', array(), '1.2.1', false);
 }
 
-add_action('wp_print_scripts', 'add_my_scripts');
+//add_action('wp_print_scripts', 'add_my_scripts');
 
 // バージョン更新を非表示にする
 add_filter('pre_site_transient_update_core', '__return_zero');
